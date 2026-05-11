@@ -1,0 +1,46 @@
+# =============================================
+# .gitignore — File yang TIDAK boleh di-upload ke GitHub
+# =============================================
+
+# --- Credentials & Secrets ---
+.env
+*.env.local
+secrets.json
+userdata/
+
+# --- Data Sensitif / Besar ---
+data/
+*.xlsx
+*.xls
+*.csv
+!.env.example          # .env.example BOLEH di-push (isinya cuma placeholder)
+
+# --- ChromaDB (ukuran besar, generate ulang dari notebook) ---
+chroma_db/
+*.chroma
+*.sqlite3
+
+# --- Model weights (sangat besar) ---
+adapters/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# --- Jupyter Notebook output (bersihkan sebelum push) ---
+*.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- File hasil generate lokal ---
+data/processed/
+*.json
+!requirements.txt
+
+# --- OS & Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
