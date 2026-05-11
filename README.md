@@ -45,7 +45,7 @@ User Input (usia, BB, TB, aktivitas, tujuan) ──► calculator.py
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/username/gizi-tkpi-rag.git
+git clone https://github.com/username/neuro-symbolic-nutrition-assistant.git
 ```
 
 ### 2. Install Dependencies
